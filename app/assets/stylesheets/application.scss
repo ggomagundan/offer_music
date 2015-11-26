@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  background-color: #34c6f4;
+  .wrap-content{
+    background: #ffffff;
+    width:100%;
+    min-height: 500px;
+    padding: 20px;
+  }
+}
+

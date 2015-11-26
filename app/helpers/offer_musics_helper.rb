@@ -1,0 +1,2 @@
+module OfferMusicsHelper
+end

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MusicOffer</title>
+  <%= stylesheet_link_tag    'application', 'controller',  media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'controller', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <!-- Navbar content -->
+    <div class="container">
+      <a class="navbar-brand" href="/">MUSIC OFFER</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="wrap-content">
+
+      <%= yield %>
+    </div>
+
+  </div>
+
+</body>
+</html>

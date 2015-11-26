@@ -1,0 +1,24 @@
+<% title "Offer Music" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @offer_music.title %>
+</p>
+<p>
+  <strong>Singer:</strong>
+  <%= @offer_music.singer %>
+</p>
+<p>
+  <strong>Offer Name:</strong>
+  <%= @offer_music.offer_name %>
+</p>
+<p>
+  <strong>Is End:</strong>
+  <%= @offer_music.is_end %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_offer_music_path(@offer_music) %> |
+  <%= link_to "Destroy", @offer_music, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", offer_musics_path %>
+</p>

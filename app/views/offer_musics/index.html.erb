@@ -1,0 +1,22 @@
+
+<%= link_to "New Offer", new_offer_music_path , class: "btn btn-primary pull-right", style: "margin-bottom: 30px;" %>
+
+<table class="table table-hover" >
+  <tr>
+    <th> Title </th>
+    <th> Singer </th>
+    <th> OfferName </th>
+    <th> Memo </th>
+    <th> </th>
+  </tr>
+  <% for offer_music in @offer_musics %>
+    <tr>
+      <td><%= offer_music.title %></td>
+      <td><%= offer_music.singer %></td>
+      <td><%= offer_music.offer_name %></td>
+      <td><%= offer_music.memo %></td>
+      <td><%= link_to "Picked", offer_music_path(offer_music), class: "btn btn-danger" if params[:permit].present? %></td>
+    </tr>
+  <% end %>
+</table>
+
